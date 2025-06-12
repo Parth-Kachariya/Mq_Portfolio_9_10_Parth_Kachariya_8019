@@ -17,6 +17,14 @@ header {
   background-repeat: no-repeat;
   background-attachment: fixed;
 }
+nav {
+  /* width: 1320px; */
+  height: 105px;
+  padding: 0 50px;
+  /* margin: auto; */
+  max-width: 1500px;
+  /* margin: auto; */
+}
 
 ol,
 ul {
@@ -31,11 +39,9 @@ a {
   padding: 0 5px;
   font-weight: 600;
 }
-.main_navbar {
-  width: 1320px;
-  height: 105px;
-  /* padding: 0 80px; */
-  margin: auto;
+.nav_txt a:hover {
+  color: red;
+  text-decoration: underline red;
 }
 .navbar {
   display: flex;
@@ -43,7 +49,7 @@ a {
   align-items: center;
   justify-items: center;
   text-align: center;
-  width: 1320px;
+  width: 1300px;
   height: 95px;
   padding: 20px 0;
 }
@@ -71,13 +77,62 @@ a {
   gap: 20px;
   display: flex;
 }
+
+.social_icon {
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+}
+.social_icon a i {
+  color: #ffffff9e;
+  font-size: 16px;
+  flex-direction: column;
+  margin-right: 10px;
+  padding-left: 10px;
+  flex-wrap: wrap;
+  transform: translateY(0px);
+  transition: 0.4s;
+}
+
+.social_icon a i:hover {
+  color: white;
+  transform: translateY(-5px);
+  transition: 0.3s transform;
+}
 .right_side {
   display: flex;
   justify-content: space-between;
   gap: 30px;
 }
+.button {
+  transition: 0.5s background-color;
+
+  background: transparent;
+  border: 2px solid rgba(255, 255, 255, 0.205);
+  border-radius: 30px;
+}
+.nav_btn {
+  letter-spacing: 2px;
+  padding: 18px 30px;
+  border: none;
+  font-size: 15px;
+  font-weight: bold;
+  cursor: pointer;
+  background: transparent;
+  color: white;
+}
+.button:hover {
+  background-color: #fd4766;
+  transition: 0.4s background-color;
+}
 
 .mobile-btn {
-  padding-right: 15px;
-  color: white;
+  position: sticky;
+  display: none;
+  color: rgb(0, 0, 0);
+}
+
+.mobile-btn span {
+  margin-left: 20px;
+  font-size: 30px;
 }
