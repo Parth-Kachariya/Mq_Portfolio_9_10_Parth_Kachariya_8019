@@ -7,15 +7,16 @@
   font-family: "poppins", sans-serif;
 }
 body {
- 
   background-color: #0e1525;
   background-image: url(/asset/images/background-img.jpeg);
-  background-position: top center ;
+  background-position: top center;
+  background-size: cover;
   background-repeat: no-repeat;
-  background-attachment: fixed
+  background-attachment: fixed;
 }
 header {
   /* background-image: url(/asset/images/background-img.jpeg); */
+  background-size: cover;
   background-position: top center;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -23,7 +24,7 @@ header {
 nav {
   height: 105px;
   padding: 0 50px;
-width: 100%;
+  width: 100%;
 }
 
 ol,
@@ -56,8 +57,6 @@ a {
 }
 
 .logo img {
-
-  
   padding-left: 15px;
   width: 60px;
   cursor: pointer;
@@ -80,7 +79,7 @@ a {
   display: flex;
 }
 
-.right_side{
+.right_side {
   padding-right: 15px;
 }
 .social_icon {
@@ -140,46 +139,47 @@ a {
   font-size: 30px;
 }
 /* header section */
-.container{
+.container {
   max-width: 1320px;
   padding: 0 15px;
   margin: auto;
 }
 
-.main_txt_box{
+.main_txt_box {
   max-width: 1200px;
   height: auto;
   padding: 0 15px;
+  padding-bottom: 180px;
 }
-.txt_box{
+.txt_box {
   max-width: 1200px;
   height: auto;
-  padding-top:80px ;
+  padding-top: 80px;
 }
- .txt_box p{
+.txt_box p {
   color: #8091a7;
   letter-spacing: 4px;
-  margin-bottom:20px ;
+  margin-bottom: 20px;
 }
 
-.txt_box :nth-child(2){
+.txt_box :nth-child(2) {
   color: white;
   font-size: 54px;
-  font-weight: bold;
-  font-family: 'Montserrat+Alternates', sans-serif;
-}
-
-.txt_box :nth-child(3){
-  color: #fd4766;
-  font-size: 54px;
-  margin-bottom:20px ;
   font-weight: bold;
   font-family: "Montserrat+Alternates", sans-serif;
 }
-.txt_box h2{
+
+.txt_box :nth-child(3) {
+  color: #fd4766;
+  font-size: 54px;
+  margin-bottom: 20px;
+  font-weight: bold;
+  font-family: "Montserrat+Alternates", sans-serif;
+}
+.txt_box h2 {
   color: white;
   font-size: 54px;
-  margin-bottom:15px ;
+  margin-bottom: 15px;
   font-weight: bold;
   font-family: "Montserrat+Alternates", sans-serif;
 }
@@ -187,4 +187,16 @@ a {
 .btn {
   margin-top: 30px;
   width: 16.5%;
+}
+
+/* About Me  section */
+section {
+  background-color: #0e1525;
+}
+.My_Details {
+  padding-top: 50px;
+}
+.my_image img {
+  max-width: 480px;
+  height: auto;
 }
