@@ -41,11 +41,16 @@ a {
   font-weight: 600;
 }
 .nav_txt a:hover {
-  color: red;
-  text-decoration: underline red;
+  /* color: #fd4766; */
+  border-bottom: 2px solid #fd4766;
+}
+.nav_txt a:active {
+  color: #fd4766;
+  border-bottom: 2px solid #fd4766;
 }
 .navbar {
   position: fixed;
+  z-index: 1;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -54,6 +59,7 @@ a {
   width: 94%;
   height: 95px;
   padding: 20px 0;
+  /* background-color: rgba(128, 128, 128, 0.221); */
 }
 
 .logo img {
@@ -154,7 +160,7 @@ a {
 .txt_box {
   max-width: 1200px;
   height: auto;
-  padding-top: 80px;
+  padding-top: 150px;
 }
 .txt_box p {
   color: #8091a7;
@@ -165,23 +171,24 @@ a {
 .txt_box :nth-child(2) {
   color: white;
   font-size: 54px;
-  font-weight: bold;
-  font-family: "Montserrat+Alternates", sans-serif;
+  font-weight: lighter;
+
+  font-family: fantasy;
 }
 
 .txt_box :nth-child(3) {
   color: #fd4766;
   font-size: 54px;
   margin-bottom: 20px;
-  font-weight: bold;
-  font-family: "Montserrat+Alternates", sans-serif;
+  font-weight: lighter;
+  font-family: fantasy;
 }
 .txt_box h2 {
   color: white;
   font-size: 54px;
   margin-bottom: 15px;
-  font-weight: bold;
-  font-family: "Montserrat+Alternates", sans-serif;
+  font-weight: lighter;
+  font-family: fantasy;
 }
 
 .btn {
@@ -193,10 +200,189 @@ a {
 section {
   background-color: #0e1525;
 }
-.My_Details {
-  padding-top: 50px;
+.about {
+  padding: 120px 0;
+  display: flex;
+  gap: 40px;
+  justify-content: center;
 }
 .my_image img {
   max-width: 480px;
   height: auto;
+  padding: 0 30px;
+  border-radius: 20px;
+  box-shadow: 0px 0px 20px #ffff;
+  box-shadow: 0px 0px 20px #fd4766;
+}
+
+.my_data {
+  padding: 0 30px;
+  max-width: 50%;
+}
+.title_section h2 {
+  color: white;
+  font-weight: bold;
+  font-size: 50px;
+  margin-bottom: 25px;
+}
+.title_section span {
+  margin-bottom: 15px;
+  font-weight: 800;
+  font-size: 17px;
+  background: linear-gradient(
+    120deg,
+    #1c99fe 20.69%,
+    #7644ff 50.19%,
+    #fd4766 79.69%
+  );
+  background-clip: text;
+  color: transparent;
+}
+
+.title_section p {
+  color: #7a8aa0;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 30px;
+}
+
+.my_skill {
+  margin-top: 25px;
+}
+
+.option {
+  border: 2px solid rgba(255, 255, 255, 0.167);
+  height: 60px;
+  width: 100%;
+  border-radius: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.option a {
+  font-size: 15px;
+  padding: 20px 35px;
+}
+.option a:hover {
+  background-color: #fd4766;
+  border-radius: 40px;
+}
+
+.skill_detail {
+  padding-top: 20px;
+}
+
+.skill {
+  width: 100%;
+  height: auto;
+}
+
+.value {
+  color: #7a8aa0;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+.blank {
+  margin-bottom: 20px;
+
+  /* border: 1px solid #7a8aa0; */
+  width: 100%;
+  height: 5px;
+  border-radius: 0 20px 20px 0;
+  background-color: white;
+}
+
+.fill {
+  border-radius: 0 20px 20px 0;
+  height: 5px;
+  background: linear-gradient(
+    190deg,
+    #1c99fe 20.69%,
+    #7644ff 50.19%,
+    #fd4766 79.69%
+  );
+}
+
+.fill1 {
+  width: 95%;
+}
+.fill2 {
+  width: 85%;
+}
+.fill3 {
+  width: 75%;
+}
+.fill4 {
+  width: 80%;
+}
+
+/* Service section star */
+
+.service_discription{
+  margin-bottom: 30px;
+}
+
+.service_discription span {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 15px;
+  font-weight: 800;
+  font-size: 17px;
+  background: linear-gradient(
+    130deg,
+    #1c99fe 45.69%,
+    #7644ff 50.19%,
+    #fd4766 54.69%
+  );
+  background-clip: text;
+  color: transparent;
+}
+
+.service_discription h2 {
+  color: white;
+  text-align: center;
+  font-weight: bold;
+  font-size: 50px;
+  margin-bottom: 20px;
+}
+
+.service_discription p {
+  margin: auto;
+  max-width: 45%;
+  text-align: center;
+  color: #7a8aa0;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 30px;
+}
+
+.service_cards{
+  margin: auto;
+  color: white;
+  display: grid;
+  gap: 30px;
+  grid-template-columns: repeat(3 , 400px);
+  /* grid-template-rows: repeat(2 ,); */
+}
+.box{
+  margin-top: 30px;
+  padding: 30px;
+height: 300px;
+  border-radius: 15px;
+  background-color: #091020;
+  transform: translateY(0px);
+  transition: 0.3s;
+ 
+}
+.service_icon_6 a{
+  width: 60px;
+  height: auto;
+  color: white;
+  font-size: 100px;
+}
+.box:hover{
+   transform: translateY(-6px);
+  transition: 0.3s transform;
 }
