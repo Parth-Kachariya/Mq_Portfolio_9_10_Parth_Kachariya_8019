@@ -319,9 +319,12 @@ section {
 }
 
 /* Service section star */
-
-.service_discription{
+.service_main {
+  padding-bottom: 120px;
+}
+.service_discription {
   margin-bottom: 30px;
+  padding: 0 15px;
 }
 
 .service_discription span {
@@ -358,31 +361,107 @@ section {
   line-height: 30px;
 }
 
-.service_cards{
+.service_cards {
   margin: auto;
-  color: white;
   display: grid;
   gap: 30px;
-  grid-template-columns: repeat(3 , 400px);
+  grid-template-columns: repeat(3, 400px);
   /* grid-template-rows: repeat(2 ,); */
 }
-.box{
+.box {
   margin-top: 30px;
-  padding: 30px;
-height: 300px;
+  padding: 40px;
+  height: 300px;
   border-radius: 15px;
   background-color: #091020;
   transform: translateY(0px);
   transition: 0.3s;
- 
 }
-.service_icon_6 a{
+/* .service_icon_6 a {
   width: 60px;
   height: auto;
   color: white;
   font-size: 100px;
-}
-.box:hover{
-   transform: translateY(-6px);
+} */
+.box:hover {
+  transform: translateY(-6px);
   transition: 0.3s transform;
+}
+.box h3 {
+  color: white;
+  font-size: 22px;
+  margin-bottom: 18px;
+}
+.box p {
+  color: #969296;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 35px;
+  letter-spacing: 1px;
+  word-spacing: 0.1px;
+}
+
+/* Project section start */
+.project_discription {
+  margin-bottom: 30px;
+  padding: 0 15px;
+}
+
+.project_discription span {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 15px;
+  font-weight: 800;
+  font-size: 17px;
+  background: linear-gradient(
+    130deg,
+    #1c99fe 45.69%,
+    #7644ff 50.19%,
+    #fd4766 54.69%
+  );
+  background-clip: text;
+  color: transparent;
+}
+
+.project_discription h2 {
+  color: white;
+  text-align: center;
+  font-weight: bold;
+  font-size: 50px;
+  margin-bottom: 20px;
+}
+
+.project_discription p {
+  margin: auto;
+  max-width: 45%;
+  text-align: center;
+  color: #7a8aa0;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 30px;
+}
+
+.project_card {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+.card {
+  /* border: 2px solid white; */
+  height: 550px;
+  overflow: hidden;
+
+}
+
+
+.bg_img img {
+  width: 100%;
+  height: 100%;
+  transition: 0.6s transform;
+  object-fit: cover;
+}
+.bg_img img:hover {
+  transition: 0.6s transform;
+  transform: scale(1.1);
 }
