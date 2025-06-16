@@ -43,7 +43,7 @@ a {
 section {
   background-color: #0e1525;
 }
-footer{
+footer {
   background-color: #091020;
 }
 .nav_txt a:hover {
@@ -157,7 +157,7 @@ footer{
   margin: auto;
 }
 
-.main_txt_box {
+#main_txt_box {
   max-width: 1200px;
   height: auto;
   padding: 0 15px;
@@ -204,7 +204,7 @@ footer{
 
 /* About Me  section */
 
-.about {
+#about {
   padding: 120px 0;
   display: flex;
   gap: 40px;
@@ -323,7 +323,7 @@ footer{
 }
 
 /* Service section star */
-.service_main {
+#service_main {
   padding-bottom: 120px;
 }
 .service_discription {
@@ -381,12 +381,30 @@ footer{
   transform: translateY(0px);
   transition: 0.3s;
 }
-/* .service_icon_6 a {
-  width: 60px;
-  height: auto;
-  color: white;
-  font-size: 100px;
-} */
+
+.icon a i {
+  font-size: 40px;
+  margin-top: 4px;
+  margin-bottom: 18px;
+}
+.service_1 a i {
+  color: #fd4766;
+}
+.service_2 a i {
+  color: #337dff;
+}
+.service_3 a i {
+  color: #10aeb8;
+}
+.service_4 a i {
+  color: #59c98d;
+}
+.service_5 a i {
+  color: #6c3fef;
+}
+.service_6 a i {
+  color: #357ff6;
+}
 .box:hover {
   transform: translateY(-6px);
   transition: 0.3s transform, box-shadow;
@@ -408,10 +426,8 @@ footer{
 }
 
 /* Project section start */
-.latest_post {
-  padding-bottom: 120px;
-}
-.projects {
+
+#projects {
   padding-bottom: 120px;
 }
 .project_discription {
@@ -465,6 +481,30 @@ footer{
   border-radius: 10px;
   transform: translateY(0px);
   transition: 0.3s;
+  position: relative;
+}
+.project-overlay :nth-child(1){
+  display: flex;
+  justify-content: center;
+  color: red;
+  
+}
+.project-overlay{
+  /* display: flex; */
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+.card-6 .project-overlay{
+  position: absolute;
+  z-index: 500;
+  height: 300px;
+  width: 410px;
+  color: white;
+  top: 250px;
+  background: linear-gradient(to top,#fd4766,#000000);
+
+
 }
 .card-6:hover {
   transform: translateY(-8px);
@@ -473,7 +513,7 @@ footer{
   overflow: hidden;
   border-radius: 10px;
   box-shadow: 0px 0px 20px #fd4766;
-  /* box-shadow: 0px 0px 10px #ffff; */
+  /* box-shadow: 0px 0px 20px #ffff; */
 }
 
 .bg_img img {
@@ -526,6 +566,10 @@ footer{
   cursor: pointer;
 }
 /* Latest Post section start */
+
+#latest_post {
+  padding-bottom: 120px;
+}
 .post_description {
   margin-bottom: 30px;
   padding: 0 15px;
@@ -576,8 +620,8 @@ footer{
   overflow: hidden;
   transform: translateY(-8px);
   transition: 0.3s transform, box-shadow;
-  box-shadow: 0px 0px 25px #fd4766;
-  box-shadow: 0px 0px 25px #ffff;
+  box-shadow: 0px 0px 30px #fd4766;
+  /* box-shadow: 0px 0px 25px #ffff; */
 }
 .post_cards {
   display: grid;
@@ -597,8 +641,7 @@ footer{
 }
 /* Hire Me section start */
 
-
-.hire_me {
+#hire_me {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   padding-bottom: 120px;
@@ -638,6 +681,7 @@ footer{
 .mobile_no_section span,
 .email_section span {
   display: inline-block;
+  background: none;
   color: #686d72 !important ;
   font-weight: 200;
   font-size: 15px;
@@ -680,14 +724,10 @@ form textarea:focus {
 }
 textarea {
   color: white;
-  padding: 0px 20px;
+  padding: 15px 20px 0px 20px;
   height: 120px;
   width: 100%;
 }
-textarea::placeholder {
-  padding-top: 15px;
-}
-
 
 .submit_button {
   background-color: #fd4766;
@@ -695,10 +735,10 @@ textarea::placeholder {
   transition: 0.5s background;
   border: 2px solid #fd4766;
   font-size: 15px;
-  color: white; 
+  color: white;
   padding: 15px 40px 15px 40px;
   letter-spacing: 1px;
-  text-wrap:nowrap;
+  text-wrap: nowrap;
   transition: 0.5s color;
   font-weight: 500;
   text-align: center;
@@ -717,27 +757,25 @@ textarea::placeholder {
 }
 
 .hire_img img {
-  box-shadow: 0px 0px 20px #686d72;
+  box-shadow: 0px 0px 20px #fd4766;
   border-radius: 10px;
   object-fit: cover;
-  
 }
 
 /* footer section start */
 
-.footer_section_main{
+.footer_section_main {
   margin: 0px 60px;
   max-width: 94%;
 }
-.footer_section{
+.footer_section {
   display: flex;
   justify-content: space-between;
   padding: 30px 0px;
   margin-bottom: 500px;
-
 }
 
-.footer_logo img{
+.footer_logo img {
   width: 140px;
 }
 .footer_social_icon {
@@ -745,32 +783,31 @@ textarea::placeholder {
   gap: 10px;
   align-items: center;
   margin-right: -250px;
-
 }
-.footer_social_icon a i{
+.footer_social_icon a i {
   font-size: 16px;
   align-items: center;
-  color:#8a8f9e ;
+  color: #8a8f9e;
   padding: 20px;
   border: 2px solid #8a8f9e;
-  border-radius:20px 0px ;
+  border-radius: 20px 0px;
   transform: translateY(0px);
   transition: 0.5s all;
 }
-.footer_social_icon a :hover{
+.footer_social_icon a :hover {
   color: white;
   border: none;
   background-color: #fd4766;
-  border-radius:0px 20px  ;
-    transform: translateY(-5px);
+  border-radius: 0px 20px;
+  transform: translateY(-5px);
   transition: 0.5s all;
 }
 .footer_copyright {
-display: flex;
-justify-content: center;
-align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.footer_copyright P{
+.footer_copyright P {
   font-size: 15px;
   color: #969baa;
 }
