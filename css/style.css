@@ -263,7 +263,10 @@ footer {
   justify-content: space-between;
   align-items: center;
 }
-
+.open {
+  background-color: #fd4766;
+  border-radius: 40px;
+}
 .option a {
   font-size: 15px;
   padding: 20px 35px;
@@ -483,28 +486,9 @@ footer {
   transition: 0.3s;
   position: relative;
 }
-.project-overlay :nth-child(1){
-  display: flex;
-  justify-content: center;
-  color: red;
-  
-}
-.project-overlay{
-  /* display: flex; */
-  text-align: center;
-  justify-content: center;
-  align-items: center;
-}
-.card-6 .project-overlay{
-  position: absolute;
-  z-index: 500;
-  height: 300px;
-  width: 410px;
-  color: white;
-  top: 250px;
-  background: linear-gradient(to top,#fd4766,#000000);
-
-
+.project1 ,.project2,.project3,
+.project4, .project5 ,.project6{
+  position: relative;
 }
 .card-6:hover {
   transform: translateY(-8px);
@@ -515,18 +499,98 @@ footer {
   box-shadow: 0px 0px 20px #fd4766;
   /* box-shadow: 0px 0px 20px #ffff; */
 }
-
+.card-6:hover .bg_img {
+  transition: 0.6s transform;
+  transform: scale(1.1);
+}
 .bg_img img {
   width: 100%;
   height: 100%;
   transition: 0.6s transform;
   object-fit: cover;
-  position: relative;
 }
-.bg_img img:hover {
-  transition: 0.6s transform;
-  transform: scale(1.1);
+/* hover style */
+.mainoverlay {
+  position: absolute;
+  top: 450px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  padding-bottom: 20px;
+  transition: 0.5s;
+  z-index: 1;
 }
+.card-6:hover .overlay4 {
+  visibility: visible;
+  cursor: pointer;
+}
+.card-6:hover .overlay3 a {
+  color: rgba(255, 255, 255, 0.553);
+  background: transparent;
+  visibility: visible;
+  cursor: pointer;
+  top: 440px;
+  transition: 1s;
+}
+.card-6:hover .mainoverlay {
+  top: 350px;
+  transition: 0.8s;
+  cursor: pointer;
+}
+
+/* child ovarlay */
+
+.overlay1 a {
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+  /* color: #aeb3c5; */
+  color: #fd4766;
+  font-size: 20px;
+  font-weight: 200;
+  padding-bottom: 15px;
+  z-index: 1;
+}
+.overlay2 a {
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+  color: white;
+  font-size: 30px;
+  font-weight: bold;
+  transition: 0.5s;
+}
+
+.overlay3 a {
+  position: absolute;
+  top: 480px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  max-width: 88%;
+  text-align: center;
+  font-size: 20px;
+  text-decoration: none;
+  color: white;
+  visibility: hidden;
+  transition: 0.2s;
+  z-index: 2;
+}
+.overlay4 {
+  position: absolute;
+  top: 90px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(to top, #fd4766, transparent);
+  opacity: 0.7;
+  z-index: 0;
+  visibility: hidden;
+  transition: 0.2s;
+}
+/* hover style */
 .data a {
   font-size: 30px;
   color: red;
@@ -623,6 +687,10 @@ footer {
   box-shadow: 0px 0px 30px #fd4766;
   /* box-shadow: 0px 0px 25px #ffff; */
 }
+.card-3:hover .post_img {
+  transition: 0.6s transform;
+  transform: scale(1.1);
+}
 .post_cards {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -633,12 +701,8 @@ footer {
   height: 100%;
   transition: 0.6s transform;
   object-fit: cover;
-  position: relative;
 }
-.post_img img:hover {
-  transition: 0.6s transform;
-  transform: scale(1.1);
-}
+
 /* Hire Me section start */
 
 #hire_me {
