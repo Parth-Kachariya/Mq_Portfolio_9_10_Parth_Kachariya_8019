@@ -486,10 +486,7 @@ footer {
   transition: 0.3s;
   position: relative;
 }
-.project1 ,.project2,.project3,
-.project4, .project5 ,.project6{
-  position: relative;
-}
+
 .card-6:hover {
   transform: translateY(-8px);
   transition: 0.3s transform, box-shadow;
@@ -522,15 +519,15 @@ footer {
   z-index: 1;
 }
 .card-6:hover .overlay4 {
-  visibility: visible;
+  display: block;
   cursor: pointer;
 }
 .card-6:hover .overlay3 a {
   color: rgba(255, 255, 255, 0.553);
   background: transparent;
-  visibility: visible;
+  display: block;
   cursor: pointer;
-  top: 440px;
+  top: 450px;
   transition: 1s;
 }
 .card-6:hover .mainoverlay {
@@ -564,7 +561,7 @@ footer {
 
 .overlay3 a {
   position: absolute;
-  top: 480px;
+  top: 500px;
   bottom: 0;
   left: 0;
   right: 0;
@@ -574,7 +571,7 @@ footer {
   font-size: 20px;
   text-decoration: none;
   color: white;
-  visibility: hidden;
+  display: none;
   transition: 0.2s;
   z-index: 2;
 }
@@ -587,7 +584,7 @@ footer {
   background: linear-gradient(to top, #fd4766, transparent);
   opacity: 0.7;
   z-index: 0;
-  visibility: hidden;
+  display: none;
   transition: 0.2s;
 }
 /* hover style */
@@ -634,6 +631,11 @@ footer {
 #latest_post {
   padding-bottom: 120px;
 }
+.post_cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
 .post_description {
   margin-bottom: 30px;
   padding: 0 15px;
@@ -673,6 +675,7 @@ footer {
   line-height: 30px;
 }
 .card-3 {
+  /* position: relative; */
   border-radius: 10px;
   height: 550px;
   overflow: hidden;
@@ -691,10 +694,105 @@ footer {
   transition: 0.6s transform;
   transform: scale(1.1);
 }
-.post_cards {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 30px;
+/* hover style */
+.main_overlay {
+  position: absolute;
+  top: 450px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  padding-bottom: 20px;
+  transition: 0.8s;
+  z-index: 1;
+}
+.card-3::after {
+  background: linear-gradient(to top, #fd4766, transparent);
+}
+.card-3:hover .overlay_4 {
+  display: block;
+  cursor: pointer;
+}
+.card-3:hover .overlay_3 a {
+  color: white;
+  background: transparent;
+  display: block;
+  cursor: pointer;
+  top: 460px;
+  transition: 1s;
+}
+
+/* .overlay_3 {
+  display: none;
+}
+
+.card-3:hover .overlay_3 {
+  display: flex;
+  transition: 3s;
+} */
+
+.overlay_3:hover > a {
+  background-color: #fd4766 !important;
+  transition: 2s;
+}
+.card-3:hover .main_overlay {
+  top: 350px;
+  transition: 0.8s;
+  cursor: pointer;
+}
+
+/* child ovarlay */
+
+.overlay_1 a {
+  display: flex;
+  padding-left: 30px;
+  justify-content: left;
+  text-decoration: none;
+  color: #fd4766;
+  font-size: 20px;
+  font-weight: 200;
+  padding-bottom: 15px;
+  z-index: 1;
+}
+.overlay_2 a {
+  display: flex;
+  justify-content: left;
+  padding-left: 30px;
+  text-decoration: none;
+  color: white;
+  max-width: 80%;
+  font-size: 20px;
+  font-weight: bold;
+  transition: 0.5s;
+}
+
+.overlay_3 a {
+  position: absolute;
+  top: 600px;
+  left: 20px;
+  margin: auto;
+  text-align: left;
+  padding: 10px 20px;
+  margin-left: 20px;
+  border: 2px solid #fd4766;
+  font-size: 20px;
+  text-decoration: none;
+  color: white;
+  display: none;
+  transition: 0.8s all;
+  z-index: 2;
+}
+.overlay_4 {
+  position: absolute;
+  top: 90px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(to top, #fd4766, transparent);
+  opacity: 0.7;
+  z-index: 0;
+  display: none;
+  transition: 0.2s;
 }
 .post_img img {
   width: 100%;
