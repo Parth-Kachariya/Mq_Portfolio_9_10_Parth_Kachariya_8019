@@ -720,6 +720,7 @@ footer {
 }
 .viewproject a{
   font-weight: 200;
+  z-index: 1;
 }
 .viewproject {
   padding: 10px;
@@ -729,11 +730,13 @@ footer {
   color: white;
   font-size: 10px;
   opacity: 0;
+  z-index: 1;
 }
 .viewproject:hover {
   background-color: #f82b4d !important;
   border: 2px solid #fd4766 !important;
   transition: 0.5s background-color, 0.5s border-color;
+  z-index: 1;
 }
 
 .card-3:hover .viewproject {
