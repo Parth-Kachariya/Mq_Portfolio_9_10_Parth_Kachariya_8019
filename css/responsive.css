@@ -1,0 +1,43 @@
+@media (min-width: 320px) and (max-width: 992px) {
+  /* navbar */
+ body{
+  width: 100%;
+ }
+.nav_link {
+ display: none;
+}
+  .nav_txt {
+  display: none;
+}
+.social_icon {
+  display: none;
+
+}
+.social_icon a i {
+  display: none;
+}
+.mobile-btn {
+ display: block;
+}
+.button{
+  padding-top: 10px;
+
+}
+.right_side {
+
+  gap: 0px;
+}
+/* About Me  section */
+.my_data {
+  padding: 0px;
+  width: 100%;
+}
+.my_image {
+  width: 100%;
+  height: auto;
+  padding: 0px;
+  object-fit: cover;
+
+}
+
+}
