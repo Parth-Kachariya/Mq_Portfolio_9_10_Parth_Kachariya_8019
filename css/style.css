@@ -23,9 +23,8 @@ footer {
 .container {
   max-width: 1320px;
   padding: 0 15px;
-  margin:  auto;
+  margin: auto;
 }
-
 
 ol,
 ul {
@@ -205,7 +204,6 @@ nav {
   padding: 100px 0;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-
 }
 .my_image {
   width: 100%;
@@ -347,7 +345,7 @@ nav {
   width: 80%;
 }
 
-/* Service section star */
+/* Service section start */
 #service_main {
   padding-bottom: 120px;
 }
@@ -382,7 +380,7 @@ nav {
 
 .service_discription p {
   margin: auto;
-  max-width: 48%;
+  width: 48%;
   text-align: center;
   color: #7a8aa0;
   font-size: 20px;
@@ -490,7 +488,7 @@ nav {
 
 .project_discription p {
   margin: auto;
-  max-width: 48%;
+  width: 48%;
   text-align: center;
   color: #7a8aa0;
   font-size: 20px;
@@ -659,7 +657,7 @@ nav {
 
 .post_description p {
   margin: auto;
-  max-width: 48%;
+  width: 48%;
   text-align: center;
   color: #7a8aa0;
   font-size: 20px;
@@ -883,7 +881,7 @@ textarea {
 /* footer section start */
 
 .footer_section_main {
-  padding:0px 10px;
+  padding: 0px 10px;
   width: 100%;
 }
 .footer_section {
@@ -898,9 +896,8 @@ textarea {
 }
 .footer_social_icon {
   display: flex;
-
 }
-.footer_social_icon{
+.footer_social_icon {
   display: flex;
   justify-content: right;
   align-items: right;

@@ -1,122 +1,126 @@
 @media (min-width: 320px) and (max-width: 992px) {
   /* navbar */
- body{
-  width: 100%;
- }
-.nav_link {
- display: none;
-}
+  body {
+    width: 100%;
+  }
+  .nav_link {
+    display: none;
+  }
   .nav_txt {
-  display: none;
-}
-.social_icon {
-  display: none;
+    display: none;
+  }
+  .social_icon {
+    display: none;
+  }
+  .social_icon a i {
+    display: none;
+  }
+  .mobile-btn {
+    display: block;
+  }
+  .button {
+    padding-top: 10px;
+  }
+  .right_side {
+    gap: 0px;
+  }
+  /* About Me  section */
+  .my_data {
+    padding: 0px;
+    width: 100%;
+  }
+  .my_image {
+    width: 85%;
+    height: auto;
+    padding: 0px;
+    object-fit: cover;
+  }
+  .option {
+    height: auto;
+    width: 85%;
+    border-radius: 10px;
+    text-wrap: nowrap;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    align-items: center;
+    padding: 0px 10px;
+  }
+  .title_section {
+    width: 85%;
+    padding: 15px;
+  }
+  .skill_detail {
+    width: 85%;
+    padding: 15px;
+  }
+  /* Service section start  */
 
-}
-.social_icon a i {
-  display: none;
-}
-.mobile-btn {
- display: block;
-}
-.button{
-  padding-top: 10px;
+  .box {
+    width: 85%;
+  }
+  .service_discription p {
+    width: 100%;
+  }
+  /* Project section start */
+  .card-6 {
+    height: 550px;
+    width: 85%;
+  }
+  .bg_img img {
+    width: 100%;
+    height: 550px;
+  }
 
-}
-.right_side {
-
-  gap: 0px;
-}
-/* About Me  section */
-.my_data {
-  padding: 0px;
-  width: 100%;
-}
-.my_image {
-  width: 85%;
-  height: auto;
-  padding: 0px;
-  object-fit: cover;
-
-}
-.option {
-  
-  height: auto;
-  width: 85%;
-  border-radius: 10px;
-  text-wrap: nowrap;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 30px;
-  align-items: center;
-  padding: 0px 10px;
-}
-.title_section {
-  width: 85%;
-  padding: 15px;
-}
-.skill_detail {
-  width: 85%;
-  padding: 15px;
-}
-/* Service section start  */
-
-.box {
-  width: 85%;
-}
-/* Project section start */
-.card-6 {
-  height: 550px;
-  width: 85%;
-}
-.bg_img img {
-  width: 100%;
-  height: 550px;
- 
-}
-/* Latest Post section start */
-.card-3 {
-  height: 550px;
-  width: 85%;
-}
-.post_img img{
-  width: 100%;
-  height: 550px;
-}
-/* Hire Me section start */
-.form_section {
-  padding: 10px;
-}
-.form{
-  width: 85%;
-  order: 2;
-}
-.hire_img{
-  padding: 0;
-}
-.hire_img img {
-  width: 85%;
-  order: 1;
-}
-/* footer section */
-.footer_section {
-  padding:0px 10px;
-  width: 100%;
-  align-items: left;
-}
-.footer_logo{
-  display: flex;
-  padding-bottom: 20px;
-}
-.footer_social_icon{
-  padding-bottom: 20px;
-}
-.footer_copyright{
-  padding-bottom: 20px;
-
-}
-.footer_copyright P{
-  text-align: left;
-  line-height: 25px;
-}
+  .project_discription p {
+    width: 100%;
+  }
+  /* Latest Post section start */
+  .card-3 {
+    height: 550px;
+    width: 85%;
+  }
+  .post_img img {
+    width: 100%;
+    height: 550px;
+  }
+  .post_description p {
+    margin: auto;
+    width: 100%;
+  }
+  /* Hire Me section start */
+  .form_section {
+    padding: 10px;
+  }
+  .form {
+    width: 85%;
+    order: 2;
+  }
+  .hire_img {
+    padding: 0;
+  }
+  .hire_img img {
+    width: 85%;
+    order: 1;
+  }
+  /* footer section */
+  .footer_section {
+    padding: 0px 10px;
+    width: 100%;
+    align-items: left;
+  }
+  .footer_logo {
+    display: flex;
+    padding-bottom: 20px;
+  }
+  .footer_social_icon {
+    padding-bottom: 20px;
+  }
+  .footer_copyright {
+    padding-bottom: 20px;
+  }
+  .footer_copyright P {
+    text-align: left;
+    line-height: 25px;
+  }
 }
