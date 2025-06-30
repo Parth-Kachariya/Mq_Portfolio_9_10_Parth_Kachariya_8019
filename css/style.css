@@ -16,6 +16,7 @@ body {
 }
 section {
   background-color: #0e1525;
+  /* background-color: white; */
 }
 footer {
   background-color: #091020;
@@ -203,10 +204,10 @@ nav {
 #about {
   padding: 100px 0;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
 .my_image {
-  width: 100%;
+  /* width: 100%; */
   height: auto;
   padding: 0px 15px;
 }
@@ -392,7 +393,7 @@ nav {
   margin: auto;
   display: grid;
   gap: 30px;
-  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
 .box {
   margin-top: 30px;
@@ -498,7 +499,7 @@ nav {
 
 .project_cards {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 30px;
 }
 
@@ -623,7 +624,7 @@ nav {
 }
 .post_cards {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 30px;
 }
 .post_description {
@@ -757,7 +758,7 @@ nav {
 
 #hire_me {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   padding-bottom: 120px;
   gap: 30px;
 }

@@ -30,14 +30,17 @@
     width: 100%;
   }
   .my_image {
-    width: 85%;
+    width: 100%;
+    height: auto;
+    padding: 0px 15px;
+  }
+  .my_image {
     height: auto;
     padding: 0px;
     object-fit: cover;
   }
   .option {
     height: auto;
-    width: 85%;
     border-radius: 10px;
     text-wrap: nowrap;
     display: flex;
@@ -47,25 +50,19 @@
     padding: 0px 10px;
   }
   .title_section {
-    width: 85%;
     padding: 15px;
   }
   .skill_detail {
-    width: 85%;
     padding: 15px;
   }
   /* Service section start  */
 
-  .box {
-    width: 85%;
-  }
   .service_discription p {
     width: 100%;
   }
   /* Project section start */
   .card-6 {
     height: 550px;
-    width: 85%;
   }
   .bg_img img {
     width: 100%;
@@ -78,7 +75,6 @@
   /* Latest Post section start */
   .card-3 {
     height: 550px;
-    width: 85%;
   }
   .post_img img {
     width: 100%;
@@ -91,18 +87,14 @@
   /* Hire Me section start */
   .form_section {
     padding: 10px;
-  }
-  .form {
-    width: 85%;
     order: 2;
   }
+
   .hire_img {
     padding: 0;
-  }
-  .hire_img img {
-    width: 85%;
     order: 1;
   }
+
   /* footer section */
   .footer_section {
     padding: 0px 10px;
@@ -110,6 +102,7 @@
     align-items: left;
   }
   .footer_logo {
+    padding: 15px;
     display: flex;
     padding-bottom: 20px;
   }
