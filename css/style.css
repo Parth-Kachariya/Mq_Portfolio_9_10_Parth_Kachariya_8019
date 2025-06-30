@@ -393,7 +393,7 @@ nav {
   margin: auto;
   display: grid;
   gap: 30px;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
 }
 .box {
   margin-top: 30px;
@@ -499,7 +499,7 @@ nav {
 
 .project_cards {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
   gap: 30px;
 }
 
