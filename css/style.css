@@ -117,6 +117,9 @@ nav {
   justify-content: space-between;
   gap: 30px;
 }
+.button{
+  margin-right: 10px;
+}
 .button a {
   padding: 16px 30px;
   text-wrap: nowrap;
@@ -392,8 +395,8 @@ nav {
 .service_cards {
   margin: auto;
   display: grid;
-  gap: 30px;
-  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 40px;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
 .box {
   margin-top: 30px;
@@ -499,8 +502,8 @@ nav {
 
 .project_cards {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-  gap: 30px;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 40px;
 }
 
 .card-6 {
