@@ -838,7 +838,10 @@ textarea {
 form input:focus,
 form textarea:focus {
   border: none;
-  outline: 2px solid #383e4b;
+  /* outline: 2px solid #383e4b; */
+   outline: 1px solid #fd4766;
+  box-shadow:  0px 0px  25px #fd4766;
+    transition: 0.4s box-shadow;
 }
 textarea {
   color: white;
