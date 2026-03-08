@@ -44,9 +44,10 @@
     border-radius: 10px;
     text-wrap: nowrap;
     display: flex;
+    flex-direction: column;
     flex-wrap: wrap;
-    justify-content: space-between;
-    gap: 30px;
+    justify-content: center;
+    gap: 15px;
     align-items: center;
     padding: 0px 10px;
   }
@@ -116,5 +117,13 @@
   .footer_copyright P {
     text-align: left;
     line-height: 25px;
+  }
+}
+@media (min-width: 993px) and (max-width: 1283px) {
+  .option{
+    display: flex;
+    flex-wrap: wrap;
+    text-wrap: wrap;
+
   }
 }
