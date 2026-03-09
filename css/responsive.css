@@ -1,4 +1,4 @@
-@media (min-width: 320px) and (max-width: 992px) {
+@media (min-width: 310px) and (max-width: 992px) {
   /* navbar */
   body {
     width: 100%;
@@ -25,6 +25,9 @@
     gap: 0px;
   }
   /* About Me  section */
+  .about {
+    flex-direction: column;
+  }
   .my_data {
     padding: 0px;
     width: 100%;
@@ -49,7 +52,7 @@
     justify-content: center;
     gap: 15px;
     align-items: center;
-    padding: 0px 10px;
+    padding: 10px;
   }
   .title_section {
     padding: 15px;
@@ -120,10 +123,9 @@
   }
 }
 @media (min-width: 993px) and (max-width: 1283px) {
-  .option{
+  .option {
     display: flex;
     flex-wrap: wrap;
     text-wrap: wrap;
-
   }
 }
