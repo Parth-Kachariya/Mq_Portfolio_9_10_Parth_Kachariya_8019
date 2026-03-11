@@ -1,10 +1,9 @@
-@import url("https://fonts.google.com/specimen/Poppins?query=poppins&categoryFilters=Feeling:%2FExpressive%2FCalm");
-@import url("https://fonts.google.com/specimen/Montserrat+Alternates?query=Montserrat");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: "poppins", sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 body {
   background-image: url(/asset/images/background-img.jpeg);
